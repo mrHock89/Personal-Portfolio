@@ -7,6 +7,10 @@
     <meta name="author" conent="Manoj aka mrHock">
     <title>Personal Portfolio Website</title>
 
+    <!-- Font Style -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@600&display=swap" rel="stylesheet">
+
+
     <!-- Linking Css -->
      <link rel="stylesheet" href="style.css">
     <body>
@@ -18,15 +22,15 @@
                 </div>
                 <nav class="nav1">
                     <ul class="nav-ul">
-                        <li><a href="./index.html" class="current">About</a></li>
-                        <li><a href="./Navbar/skills.html">Skills</a></li>
-                        <li><a href="./Navbar/projects.html">Projects</a></li>
-                        <li><a href="./Navbar/contact.html">Contact</a></li>
+                        <li><a href="#about" class="current">About</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
                     </ul>
                 </nav>
             </div>
         </header>
-        <section class="banner container">
+        <section class="banner container" id="about">
             <div class="description">
                 <p>Hello,</p>
                 <p>I'am <span>Manoj</span></p>
@@ -35,6 +39,80 @@
             </div>
             <div class="image">
                 <img src="././Imge/profile.png" alt="myPhoto">
+            </div>
+        </section>
+        <section id="skills" class="cont">
+            <h2>My Skills</h2>
+            <div class="skill-container">
+                <div class="skill-card">
+                    <h3>Frontend</h3>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>Responsive Design</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <h3>Backend</h3>
+                    <ul>
+                        <li>Node.Js</li>
+                        <li>MySql</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <h3>Tools & Soft Skills</h3>
+                    <ul>
+                        <li>Git & Github</li>
+                        <li>Vscode, Neovim</li>
+                        <li>Terminal, Linux</li>
+                        <li>Problem Solving</li>
+                        <li>Teamwork</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <h3>Programming Language</h3>
+                    <ul>
+                        <li>C Language</li>
+                        <li>CPP</li>
+                        <li>Python</li>
+                        <li>JavaScript</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="project-container">
+                <div class="project-card">
+                    <h3>Ecommerce Website Frontend</h3>
+                    <ul>
+                        <li>Tools: HTML, CSS and JavaScript</li>
+                        <li>Github Link</li>
+                    </ul>
+                </div>
+                <div class="project-card">
+                    <h3>Responsive Login Page</h3>
+                    <ul>
+                        <li>Tools: HTML, CSS and JavaScript</li>
+                        <li>Github Link</li>
+                    </ul>
+                </div>
+                <div class="project-card">
+                    <h3>Analog Clock</h3>
+                    <ul>
+                        <li>Tools: HTML, CSS and JavaScript</li>
+                        <li>Github Link</li>
+                    </ul>
+                </div>
+                <div class="project-card">
+                    <h3>Custom Rom Developer</h3>
+                    <ul>
+                        <li>Rom Names: EvolutionX, Project Matrixx, RisingOS</li>
+                        <li>Github Link</li>
+                        <li>Telegram Link</li>
+                    </ul>
+                </div>
             </div>
         </section>
         <footer>
