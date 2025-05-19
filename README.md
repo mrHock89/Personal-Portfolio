@@ -41,5 +41,6 @@ This is my personal portfolio website built as part of **Task 01**. It showcases
 ---
 ---
 ## 📹 Demo
+![Demo](./Demo/demo2.gif)
 ![Demo](./Demo/demo.gif)
 ---
