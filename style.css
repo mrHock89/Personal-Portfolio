@@ -1,21 +1,19 @@
 /* Global */
 body{
     /* font-family: Arial, Helvetica, sans-serif; */
-    font-family: 'Inter', sans-serif;
+    font-family: 'Robot', sans-serif;
     padding: 0;
     margin: 0;
     font-size: 15px;
     /* background: linear-gradient(135deg, rgb(153, 27, 27) rgb(150, 150, 18)); */
-    color: #174897;
+    color: #305db1;
     height: 100vh;
+    background-color: #111827;
 }
 
 html {
     scroll-behavior: smooth;
   }
-/* body {
-    font-family: 'Inter', sans-serif;
-  } */
 
 h1, h2, h3 {
 font-family: 'Poppins', sans-serif;
@@ -34,10 +32,14 @@ section{
 
 header{
     /* background: #0f172a; */
-    padding-top: 30px;
-    min-height: 10%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #111827;
+    padding: 20px 0;
+    z-index: 1000;
     border-bottom: 5px solid orangered;
-    color: 374151;
 }
 header .name{
     float: left;
@@ -57,19 +59,18 @@ header li{
 header a{
     display: inline;
     text-transform: uppercase;
-    color:#374151;
+    color:#305db1;
     text-decoration: none;
-}
-header .current{
-    color: orangered;
-    font-size: 17px;
-    font-weight: bold;
+    font-size: 20px;
+    transition: all 0.3s ease-in-out;
 }
 
+
 header a:hover{
-    color: blue;
+    color: rgb(151, 23, 44);
     font-weight: bold;
     font-size: 17px;
+    
 }
 
 /* About */
@@ -83,7 +84,7 @@ header a:hover{
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    height: 50vh;
+    height: 100vh;
     overflow: hidden;
 }
 .about-card img{
@@ -94,9 +95,7 @@ header a:hover{
     object-fit: cover;
     transition: all 0.3s ease-in-out;
 }
-.about-card img:hover, p:hover{
-    transform: scale(1.4);
-}
+
 .about-card {
     height: 350px;
     /* border: 2px solid black; */
@@ -108,6 +107,7 @@ header a:hover{
 .about-card p{
     font-size: 50px;
     text-align: justify;
+    transition: all 0.3s ease-in-out;
 }
 .about-card span{
     color:orangered;
@@ -117,12 +117,17 @@ header a:hover{
     font-size: 70px;
     margin-bottom: 0;
 }
+
+.about-card img:hover, p:hover{
+    transform: scale(1.4);
+}
 /* Skill Section */
 
 #skills{
     padding: 4rem 2rem;
     text-align: center;
-    background-color: #f9fafb;
+    /* background-color: #f9fafb; */
+    background-color: #111827;
 }
 .skill-container{
     display: grid;
@@ -147,9 +152,10 @@ header a:hover{
     list-style: none;
 }
 
+
 /* Projects */
 #projects{
-    background-color: #f9fafb;
+    background-color: #111827;
     padding: 4rem 2rem;
     text-align: center;
 }
@@ -181,8 +187,15 @@ header a:hover{
 
 #contact{
     text-align: center;
-    background-color: #f9fafb;
+    background-color: #111827;
     padding: 4rem;
+}
+#skills h2{
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+#projects h2{
+    font-size: 2.5rem;
 }
 #contact h2{
     font-size: 2.5rem;
@@ -200,7 +213,7 @@ header a:hover{
     transition: all 0.3s ease-in-out;
 }
 .social-media a:hover{
-    transform: scale(1.1);
+    transform: scale(1.4);
 }
 
 
@@ -215,4 +228,25 @@ footer{
 #skills h2{
     text-align: center;
 }
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
+    
+/* ResponsiveNess */
+@media (max-width: 1250px){
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }    
+}
+@media (max-width: 670px){
+    #about{
+        display: flex;
+        flex-direction: column;
+        /* height: 100vh; */
+    }
+    #about .about-container{
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+    }
+}
