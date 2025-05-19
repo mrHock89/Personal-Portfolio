@@ -1,7 +1,7 @@
 /* Global */
 body{
     /* font-family: Arial, Helvetica, sans-serif; */
-    font-family: 'Robot', sans-serif;
+    font-family: 'Roboto', sans-serif;
     padding: 0;
     margin: 0;
     font-size: 15px;
@@ -91,16 +91,14 @@ header a:hover{
 
 .about-container{
     display: flex;
-    height:60vh;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    gap: 6rem
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    text-align: center;
 }
 .about-card{
-    width: 100%;
-    max-width: 300px;
-    /* margin: 50px; */
+    flex: 1 1 300px;
+
 }
 
 .about-card img{
@@ -286,23 +284,32 @@ footer{
 }
     
 /* ResponsiveNess */
-/* @media (max-width: 1250px){
-    .container{
+@media (max-width: 768px) {
+    header .name, header .nav1 {
+        float: none;
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    .nav-ul {
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }    
+        gap: 10px;
+        padding-left: 0;
+    }
+
+    .about-container {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .project-card button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .project-card .link {
+        flex-direction: column;
+    }
 }
-@media (max-width: 670px){
-    #about{
-        display: flex;
-        flex-direction: row;
-        height: 100vh;
-    }
-    #about .about-container{
-        display: flex;
-        flex-direction: column;
-        height: 100vh;
-    }
-} */
+
