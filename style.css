@@ -313,3 +313,14 @@ footer{
     }
 }
 
+/* Optimization to my profile */
+#profilePic {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .hover-effect {
+    transform: scale(1.1);
+    border-radius: 50%;
+    /* box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); */
+  }
+  
