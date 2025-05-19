@@ -75,52 +75,76 @@ header a:hover{
 
 /* About */
 
+
 #about{
     padding: 4rem 2rem;
-    text-align: center;
-}
-.about-container{
+    min-height: 60vh;
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
-    height: 100vh;
-    overflow: hidden;
-}
-.about-card img{
-    height: 350px;
-    border: 2px solid black;
-    border-radius: 20%;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-    object-fit: cover;
-    transition: all 0.3s ease-in-out;
-}
-
-.about-card {
-    height: 350px;
-    /* border: 2px solid black; */
-    /* border-radius: 20%; */
-    /* box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); */
-    padding: 2rem;
-    /* object-fit: cover; */
-}
-.about-card p{
-    font-size: 50px;
-    text-align: justify;
-    transition: all 0.3s ease-in-out;
-}
-.about-card span{
-    color:orangered;
-    font-weight: bold;
+    flex-direction: column;
+    /* position: absolute; */
 }
 #about h2{
-    font-size: 70px;
-    margin-bottom: 0;
+    font-size: 2.5rem;;
 }
 
-.about-card img:hover, p:hover{
-    transform: scale(1.4);
+.about-container{
+    display: flex;
+    height:60vh;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 6rem
 }
+.about-card{
+    width: 100%;
+    max-width: 300px;
+    /* margin: 50px; */
+}
+
+.about-card img{
+    max-width: 300px;
+    width: 100%;
+    border-radius: 12px;
+    /* display: block; */
+}
+.about-card h3{
+    font-size: 2rem;
+}
+.about-card{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.about-card p{
+    font-size: 1.5rem;
+    text-align: center;
+}
+span{
+    color: orangered;
+}
+
+/* Resume Button */
+.btn-resume {
+    display: inline-block;
+    margin-top: 1.5rem;
+    padding: 0.75rem 1.5rem;
+    background-color: orangered;
+    color: white;
+    font-weight: bold;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.btn-resume:hover {
+    background-color: #cc3300;
+}
+
 /* Skill Section */
 
 #skills{
