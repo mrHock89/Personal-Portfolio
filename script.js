@@ -18,7 +18,6 @@ var typed = new Typed(".auto-type", {
 })
 
 // For accessing back to top button
-// Show/hide the button on scroll
 window.onscroll = function () {
   const btn = document.getElementById("backToTop");
   if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
@@ -28,7 +27,6 @@ window.onscroll = function () {
   }
 };
 
-// Scroll to top on click
 document.getElementById("backToTop").addEventListener("click", function () {
   window.scrollTo({
     top: 0,
