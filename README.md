@@ -28,20 +28,7 @@ This is my personal portfolio website built as part of **Task 01**. It showcases
 - 🧠 **Skills Section** – Lists the tec
 
 ---
----
-## 📂 File Structure
 
-Personal-Portfolio/
-│
-├── index.html # Main webpage
-├── styles.css # External CSS for styling
-├── script.js # JavaScript for interactivity
-├── assets/ # Images and other assets (e.g., profile photo)
-├── README.md # Project documentation
-└── 
-...
-
----
 
 ## 📸 Screenshots
 
