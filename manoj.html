@@ -1,0 +1,522 @@
+
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chronix — Editor & ROM Developer</title>
+  <meta name="description" content="Chronix — Video Editor, ROM Developer for Redmi Note 7 Pro (Violet), and story game enthusiast." />
+  <meta property="og:title" content="Chronix — Editor & ROM Developer" />
+  <meta property="og:description" content="Video Editor, ROM Developer, Gamer. Check out my work." />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <script src="https://unpkg.com/feather-icons"></script>
+  <link rel="stylesheet" href="manoj.css" />
+  <script>
+    // Set theme before CSS renders — prevents flash of wrong theme
+    (function() {
+      var t = localStorage.getItem('theme');
+      document.documentElement.setAttribute('data-theme', t === 'light' ? 'light' : 'dark');
+    })();
+  </script>
+</head>
+<body>
+
+  <!-- ── Page Transition ── -->
+  <div class="page-transition" id="pageTransition"></div>
+
+  <!-- ── Custom Cursor ── -->
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- ── Splash ── -->
+  <div class="splash" id="splash">
+    <div class="splash-bg-ring splash-ring-1"></div>
+    <div class="splash-bg-ring splash-ring-2"></div>
+    <div class="splash-bg-ring splash-ring-3"></div>
+    <div class="splash-inner">
+      <div class="splash-avatar-wrap">
+        <div class="splash-avatar-ring"></div>
+        <img src="pfp.jpg" alt="Chronix" class="splash-avatar" />
+        <div class="splash-avatar-glow"></div>
+      </div>
+      <p class="splash-name">Chronix</p>
+      <p class="splash-tagline">Editor · ROM Dev · Gamer</p>
+      <div class="splash-bar"><div class="splash-fill"></div></div>
+    </div>
+  </div>
+
+  <!-- ── Nav ── -->
+  <nav class="nav" id="nav">
+    <a href="#" class="nav-brand">Chronix</a>
+    <ul class="nav-links">
+      <li><a href="#about"   class="nav-link">About</a></li>
+      <li><a href="#skills"  class="nav-link">Skills</a></li>
+      <li><a href="#interests" class="nav-link">Interests</a></li>
+      <li><a href="#github"  class="nav-link">GitHub</a></li>
+      <li><a href="#connect" class="nav-link">Connect</a></li>
+    </ul>
+    <div class="nav-right">
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+        <span class="theme-icon dark-icon"><i data-feather="moon"></i></span>
+        <span class="theme-icon light-icon"><i data-feather="sun"></i></span>
+      </button>
+      <a href="#connect" class="nav-cta">Say Hello</a>
+    </div>
+  </nav>
+
+  <!-- ── Hero ── -->
+  <section class="hero">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+    <div class="hero-grid-overlay"></div>
+
+    <div class="hero-content">
+      <div class="hero-eyebrow reveal">
+        <span class="status-dot"></span>
+        <span>Editor &amp; ROM Developer</span>
+      </div>
+      <h1 class="hero-title reveal delay-1">
+        Crafting visuals.<br />
+        <span class="text-primary">Building systems.</span>
+      </h1>
+      <p class="hero-body reveal delay-2">
+        I'm Chronix — I edit videos that hold attention and build
+        custom Android ROMs from the ground up.
+      </p>
+      <div class="hero-actions reveal delay-3">
+        <a href="#connect" class="btn-filled">Get in Touch</a>
+        <a href="#about"   class="btn-tonal">About Me</a>
+      </div>
+      <div class="hero-chips reveal delay-4">
+        <div class="chip"><i data-feather="film"></i> Video Editing</div>
+        <div class="chip"><i data-feather="cpu"></i> ROM Dev</div>
+        <div class="chip"><i data-feather="smartphone"></i> Android 16</div>
+        <div class="chip"><i data-feather="book-open"></i> Story Games</div>
+      </div>
+    </div>
+
+    <div class="float-card fc-1 reveal delay-2">
+      <i data-feather="film"></i>
+      <span>Latest Edit</span>
+      <small>Just uploaded</small>
+    </div>
+    <div class="float-card fc-2 reveal delay-3">
+      <i data-feather="cpu"></i>
+      <span>ROM Build</span>
+      <small>Android 16 · Violet</small>
+    </div>
+
+    <div class="scroll-hint reveal delay-4">
+      <i data-feather="chevrons-down"></i>
+    </div>
+  </section>
+
+  <!-- ── About ── -->
+  <section class="section" id="about">
+    <div class="section-inner">
+      <p class="eyebrow reveal">About</p>
+      <div class="about-grid">
+        <div class="about-left reveal">
+          <div class="about-pfp-wrap">
+            <img src="pfp.jpg" alt="Chronix" class="about-pfp" />
+            <div class="about-pfp-ring"></div>
+          </div>
+          <h2>A bit<br/>about me</h2>
+          <div class="about-accent-line"></div>
+        </div>
+        <div class="about-right">
+          <p class="body-lg reveal delay-1">
+            Hey — I'm Chronix. I turn raw footage into polished edits that
+            actually connect with people, and I build custom Android ROMs
+            that push devices beyond their stock limits.
+          </p>
+          <p class="body-lg reveal delay-2">
+            On YouTube and Instagram I share my edits — cinematic cuts,
+            fast-paced reels, and everything in between. My latest ROM
+            targets the Redmi Note 7 Pro (Violet) running Android 16.
+          </p>
+          <div class="about-stats reveal delay-3">
+            <div class="stat-item">
+              <span class="stat-value">10+</span>
+              <span class="stat-label">Projects done</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+              <span class="stat-value">3+</span>
+              <span class="stat-label">Years active</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+              <span class="stat-value">A16</span>
+              <span class="stat-label">Latest ROM</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ROM spotlight -->
+      <div class="rom-spotlight reveal">
+        <div class="rom-badge">Latest Build</div>
+        <div class="rom-info">
+          <div class="rom-icon"><i data-feather="smartphone"></i></div>
+          <div>
+            <span class="rom-name">Android 16 · Redmi Note 7 Pro</span>
+            <span class="rom-codename">Codename: Violet</span>
+          </div>
+        </div>
+        <div class="rom-tags">
+          <span class="rom-tag">AOSP</span>
+          <span class="rom-tag">Android 16</span>
+          <span class="rom-tag">Violet</span>
+          <span class="rom-tag">Open Source</span>
+        </div>
+      </div>
+
+      <div class="marquee-wrap reveal">
+        <div class="marquee-track">
+          <span>Video Editing</span><span class="dot-sep">·</span>
+          <span>ROM Development</span><span class="dot-sep">·</span>
+          <span>Color Grading</span><span class="dot-sep">·</span>
+          <span>Android 16</span><span class="dot-sep">·</span>
+          <span>Open Source</span><span class="dot-sep">·</span>
+          <span>Linux</span><span class="dot-sep">·</span>
+          <span>Redmi Note 7 Pro</span><span class="dot-sep">·</span>
+          <span>Story Games</span><span class="dot-sep">·</span>
+          <span>Graphic Design</span><span class="dot-sep">·</span>
+          <span>Video Editing</span><span class="dot-sep">·</span>
+          <span>ROM Development</span><span class="dot-sep">·</span>
+          <span>Color Grading</span><span class="dot-sep">·</span>
+          <span>Android 16</span><span class="dot-sep">·</span>
+          <span>Open Source</span><span class="dot-sep">·</span>
+          <span>Linux</span><span class="dot-sep">·</span>
+          <span>Redmi Note 7 Pro</span><span class="dot-sep">·</span>
+          <span>Story Games</span><span class="dot-sep">·</span>
+          <span>Graphic Design</span><span class="dot-sep">·</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Skills ── -->
+  <section class="section section-alt" id="skills">
+    <div class="section-inner">
+      <p class="eyebrow reveal">Skills</p>
+      <h2 class="reveal delay-1">What I do</h2>
+      <div class="skills-grid">
+        <div class="skill-card reveal">
+          <div class="skill-card-icon"><i data-feather="film"></i></div>
+          <h3>Video Editing</h3>
+          <p>Cinematic cuts, color grading, motion graphics, and reels built to perform on every platform.</p>
+        </div>
+        <div class="skill-card reveal delay-1">
+          <div class="skill-card-icon"><i data-feather="cpu"></i></div>
+          <h3>ROM Development</h3>
+          <p>Custom Android ROMs for Redmi Note 7 Pro (Violet) — built from AOSP source up to Android 16.</p>
+        </div>
+        <div class="skill-card reveal delay-2">
+          <div class="skill-card-icon"><i data-feather="layers"></i></div>
+          <h3>Graphic Design</h3>
+          <p>Thumbnails, banners, and visual assets that look sharp and consistent across every surface.</p>
+        </div>
+        <div class="skill-card reveal delay-1">
+          <div class="skill-card-icon"><i data-feather="terminal"></i></div>
+          <h3>Android & Linux</h3>
+          <p>ADB, Fastboot, shell scripting, and low-level Android tooling for real device work.</p>
+        </div>
+        <div class="skill-card reveal delay-2">
+          <div class="skill-card-icon"><i data-feather="zap"></i></div>
+          <h3>Optimization</h3>
+          <p>Performance tuning for both video pipelines and Android system builds.</p>
+        </div>
+        <div class="skill-card reveal delay-3">
+          <div class="skill-card-icon"><i data-feather="code"></i></div>
+          <h3>Open Source</h3>
+          <p>Contributing to and maintaining open source Android projects on GitHub.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Interests ── -->
+  <section class="section" id="interests">
+    <div class="section-inner">
+      <p class="eyebrow reveal">Beyond the screen</p>
+      <h2 class="reveal delay-1">What I'm into</h2>
+
+      <!-- Top 3 interest cards -->
+      <div class="interests-grid">
+        <div class="interest-card interest-games reveal">
+          <div class="interest-glow"></div>
+          <div class="interest-icon"><i data-feather="monitor"></i></div>
+          <h3>Gaming</h3>
+          <p>From open-world chaos to epic story arcs — I play games that feel like experiences, not just entertainment.</p>
+          <div class="interest-tags">
+            <span>Open World</span><span>Story</span><span>Action</span>
+          </div>
+        </div>
+        <div class="interest-card interest-roms reveal delay-1">
+          <div class="interest-glow"></div>
+          <div class="interest-icon"><i data-feather="smartphone"></i></div>
+          <h3>Custom ROMs</h3>
+          <p>Pushing Android to its limits on the Redmi Note 7 Pro. Android 16 on a device that was never supposed to run it.</p>
+          <div class="interest-tags">
+            <span>Android 16</span><span>Violet</span><span>AOSP</span>
+          </div>
+        </div>
+        <div class="interest-card interest-edit reveal delay-2">
+          <div class="interest-glow"></div>
+          <div class="interest-icon"><i data-feather="film"></i></div>
+          <h3>Creative Editing</h3>
+          <p>Turning raw clips into something that actually feels like something. Pacing, color, sound — all of it matters.</p>
+          <div class="interest-tags">
+            <span>Cinematic</span><span>Reels</span><span>Color Grade</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Games shelf -->
+      <div class="games-shelf reveal">
+        <p class="games-shelf-label">Games I play</p>
+        <div class="games-grid">
+
+          <div class="game-card">
+            <div class="game-cover game-cover-gta">
+              <img
+                src="https://cdn.cloudflare.steamstatic.com/steam/apps/271590/library_600x900.jpg"
+                alt="GTA V"
+                loading="lazy"
+                onerror="this.style.display='none'"
+              />
+              <span class="game-cover-fallback">GTA V</span>
+            </div>
+            <span class="game-name">GTA V</span>
+            <span class="game-genre">Open World</span>
+          </div>
+
+          <div class="game-card">
+            <div class="game-cover game-cover-cod">
+              <img
+                src="https://cdn.cloudflare.steamstatic.com/steam/apps/1938090/library_600x900.jpg"
+                alt="Call of Duty"
+                loading="lazy"
+                onerror="this.style.display='none'"
+              />
+              <span class="game-cover-fallback">COD</span>
+            </div>
+            <span class="game-name">Call of Duty</span>
+            <span class="game-genre">FPS · Shooter</span>
+          </div>
+
+          <div class="game-card">
+            <div class="game-cover game-cover-mc">
+              <img
+                src="https://cdn.cloudflare.steamstatic.com/steam/apps/1672970/library_600x900.jpg"
+                alt="Minecraft"
+                loading="lazy"
+                onerror="this.style.display='none'"
+              />
+              <span class="game-cover-fallback">Minecraft</span>
+            </div>
+            <span class="game-name">Minecraft</span>
+            <span class="game-genre">Sandbox</span>
+          </div>
+
+          <div class="game-card">
+            <div class="game-cover game-cover-gow">
+              <img
+                src="https://cdn.cloudflare.steamstatic.com/steam/apps/1593500/library_600x900.jpg"
+                alt="God of War"
+                loading="lazy"
+                onerror="this.style.display='none'"
+              />
+              <span class="game-cover-fallback">God of War</span>
+            </div>
+            <span class="game-name">God of War</span>
+            <span class="game-genre">Action · Story</span>
+          </div>
+
+          <div class="game-card">
+            <div class="game-cover game-cover-rdr">
+              <img
+                src="https://cdn.cloudflare.steamstatic.com/steam/apps/1174180/library_600x900.jpg"
+                alt="RDR 2"
+                loading="lazy"
+                onerror="this.style.display='none'"
+              />
+              <span class="game-cover-fallback">RDR 2</span>
+            </div>
+            <span class="game-name">RDR 2</span>
+            <span class="game-genre">Story · Western</span>
+          </div>
+
+          <div class="game-card">
+            <div class="game-cover game-cover-tlou">
+              <img
+                src="https://cdn.cloudflare.steamstatic.com/steam/apps/1888930/library_600x900.jpg"
+                alt="The Last of Us"
+                loading="lazy"
+                onerror="this.style.display='none'"
+              />
+              <span class="game-cover-fallback">TLOU</span>
+            </div>
+            <span class="game-name">The Last of Us</span>
+            <span class="game-genre">Survival · Story</span>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ── GitHub ── -->
+  <section class="section section-alt" id="github">
+    <div class="section-inner">
+      <p class="eyebrow reveal">Open Source</p>
+      <h2 class="reveal delay-1">GitHub Activity</h2>
+      <p class="connect-sub reveal delay-1">Snake eating through my commits — every cell is a contribution.</p>
+
+      <!-- Stats row -->
+      <div class="gh-stats-row reveal delay-2">
+        <div class="gh-stat-card">
+          <span class="gh-stat-num" id="ghStatCommits">—</span>
+          <span class="gh-stat-label">Total Commits</span>
+        </div>
+        <div class="gh-stat-card">
+          <span class="gh-stat-num" id="ghStatRepos">—</span>
+          <span class="gh-stat-label">Repositories</span>
+        </div>
+        <div class="gh-stat-card">
+          <span class="gh-stat-num" id="ghStatContribs">—</span>
+          <span class="gh-stat-label">Commits This Year</span>
+        </div>
+        <div class="gh-stat-card">
+          <span class="gh-stat-num" id="ghStatDays">—</span>
+          <span class="gh-stat-label">Active Days</span>
+        </div>
+      </div>
+
+      <div class="gh-card reveal delay-3">
+        <div class="gh-card-header">
+          <div class="gh-avatar"><i data-feather="github"></i></div>
+          <div>
+            <span class="gh-username">M A N O J</span>
+            <span class="gh-sub">Contributions in the last year</span>
+          </div>
+          <a href="https://github.com/mrHock89" target="_blank" class="gh-link-btn">
+            View Profile <i data-feather="arrow-up-right"></i>
+          </a>
+        </div>
+        <div class="gh-graph-wrap">
+          <canvas id="snakeCanvas" class="snake-canvas"></canvas>
+          <div class="gh-graph" id="ghGraph">
+            <div class="gh-loading"><span></span><span></span><span></span></div>
+          </div>
+        </div>
+        <div class="gh-legend">
+          <span class="gh-legend-label">Less</span>
+          <span class="gh-cell" data-level="0"></span>
+          <span class="gh-cell" data-level="1"></span>
+          <span class="gh-cell" data-level="2"></span>
+          <span class="gh-cell" data-level="3"></span>
+          <span class="gh-cell" data-level="4"></span>
+          <span class="gh-legend-label">More</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Connect ── -->
+  <section class="section" id="connect">
+    <div class="section-inner">
+      <p class="eyebrow reveal">Connect</p>
+      <h2 class="reveal delay-1">Find me online</h2>
+      <p class="connect-sub reveal delay-2">Watch my edits, explore my ROM work, or just reach out.</p>
+      <div class="socials-list">
+
+        <a href="https://www.youtube.com/@chronix_ae" target="_blank" class="social-row reveal">
+          <div class="social-left">
+            <div class="social-icon-wrap">
+              <svg class="social-svg yt-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 0 0 1.46 6.42 29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58 2.78 2.78 0 0 0 1.95 1.96C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.96A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/>
+                <polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02"/>
+              </svg>
+            </div>
+            <div class="social-text">
+              <span class="social-name">YouTube</span>
+              <span class="social-desc">Edits, showcases &amp; creative videos</span>
+            </div>
+          </div>
+          <i data-feather="arrow-right" class="social-arrow"></i>
+        </a>
+
+        <a href="https://www.instagram.com/chronix_aep/" target="_blank" class="social-row reveal delay-1">
+          <div class="social-left">
+            <div class="social-icon-wrap">
+              <svg class="social-svg ig-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+              </svg>
+            </div>
+            <div class="social-text">
+              <span class="social-name">Instagram</span>
+              <span class="social-desc">Short edits &amp; behind the scenes</span>
+            </div>
+          </div>
+          <i data-feather="arrow-right" class="social-arrow"></i>
+        </a>
+
+        <a href="https://github.com/ChroniX-AOSP/" target="_blank" class="social-row reveal delay-2">
+          <div class="social-left">
+            <div class="social-icon-wrap">
+              <svg class="social-svg gh-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+              </svg>
+            </div>
+            <div class="social-text">
+              <span class="social-name">GitHub</span>
+              <span class="social-desc">Open source ROMs &amp; dev projects</span>
+            </div>
+          </div>
+          <i data-feather="arrow-right" class="social-arrow"></i>
+        </a>
+
+        <a href="https://t.me/chronixae" target="_blank" class="social-row reveal delay-3">
+          <div class="social-left">
+            <div class="social-icon-wrap">
+              <svg class="social-svg tg-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="22" y1="2" x2="11" y2="13"/>
+                <polygon points="22 2 15 22 11 13 2 9 22 2"/>
+              </svg>
+            </div>
+            <div class="social-text">
+              <span class="social-name">Telegram</span>
+              <span class="social-desc">Updates, DMs &amp; community</span>
+            </div>
+          </div>
+          <i data-feather="arrow-right" class="social-arrow"></i>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Footer ── -->
+  <footer class="footer">
+    <span class="footer-brand">M A N O J</span>
+    <p class="footer-copy">© 2026 · Learner · ROM Dev · Programmer</p>
+  </footer>
+
+  <script>
+    // Init feather icons after DOM is ready
+    document.addEventListener('DOMContentLoaded', function() {
+      if (typeof feather !== 'undefined') feather.replace({ 'stroke-width': 1.75 });
+    });
+  </script>
+  <script src="manoj.js"></script>
+</body>
+</html>
